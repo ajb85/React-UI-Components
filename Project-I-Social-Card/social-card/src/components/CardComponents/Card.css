@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.cardContainer {
+  cursor: pointer;
+}
+
 .contentBanner {
   border: 1px solid lightgrey;
   border-radius: 0px 0px 7px 7px;
