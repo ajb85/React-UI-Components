@@ -1,0 +1,15 @@
+.footerContainer {
+  margin-left: 60px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+}
+
+.footerContainer span {
+  margin-left: 10px;
+}
+
+.footerContainer i {
+  cursor: pointer;
+}
