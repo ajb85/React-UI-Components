@@ -7,7 +7,7 @@ export default function(props) {
     <div className="headerTitle">
       <Header>{props.children}</Header>
       <p className="author">@LambdaSchool</p>
-      <p className="timeStamp">26 Jan</p>
+      <p className="timeStamp">11 Feb</p>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import "./Card.css";
 
-import Banner from "./CardBanner.js";
+import Header from "../HeaderComponents/HeaderContainer.js";
 import Content from "./CardContent.js";
 
 export default function() {
   return (
     <div>
-      <Banner />
+      <Header />
       <Content />
     </div>
   );

@@ -24,3 +24,17 @@
   font-size: 20px;
   margin: 0;
 }
+.headerImage img {
+  -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
+  filter: brightness(0) invert(1);
+}
+
+div.headerImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #a0151c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
