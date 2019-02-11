@@ -1,1 +1,26 @@
-/* All styles for your header Components live here */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.headerContainer .titleContainer {
+  width: 540px;
+}
+
+.titleContainer .headerTitle {
+  display: flex;
+  align-items: center;
+  width: 375px;
+  justify-content: space-between;
+}
+
+.headerTitle p {
+  color: grey;
+  font-size: 16px;
+  margin: 0;
+}
+.headerTitle h2 {
+  font-size: 20px;
+  margin: 0;
+}
