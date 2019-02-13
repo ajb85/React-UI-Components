@@ -26,7 +26,7 @@ class App extends Component {
 
     if (!display || action) {
       display = num;
-    } else {
+    } else if (display.toString().length < 9) {
       display += num;
     }
 
@@ -71,6 +71,10 @@ class App extends Component {
     if (total === "Err") {
       total = 0;
     }
+    if (display.toString().length > 19) {
+      display = "Lg# Err";
+      total = 0;
+    }
 
     for (let operation in operations) {
       if (clicked === operation) {
@@ -79,7 +83,6 @@ class App extends Component {
         operations[operation] = 0;
       }
     }
-
     action = 1;
 
     this.setState({ display, total, operations, action });
