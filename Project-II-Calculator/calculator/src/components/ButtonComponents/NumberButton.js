@@ -1,10 +1,10 @@
-import React from 'react';
-import './Button.css';
+import React from "react";
+import "./Button.css";
 
-const NumberButton = props => {
-    return (
-        <button className={props.buttonStyle} onClick={props.handelNumber}>{props.number}</button>
-    );
-}
-
-export default NumberButton;
+export default props => {
+  return (
+    <button className={props.buttonStyle} onClick={props.handleNumber}>
+      {props.number}
+    </button>
+  );
+};

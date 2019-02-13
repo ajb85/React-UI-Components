@@ -1,13 +1,12 @@
-import React from 'react';
-import './Display.css';
+import React from "react";
+import "./Display.css";
 
 const CalculatorDisplay = props => {
-   
-    return (
-        <div className="calculator-display">
-            {props.number}
-        </div>
-    );
-}
+  const display =
+    props.number.toString().length > 9
+      ? Number(props.number.toString().substr(0, 9))
+      : props.number;
+  return <div className="calculator-display">{display}</div>;
+};
 
 export default CalculatorDisplay;
