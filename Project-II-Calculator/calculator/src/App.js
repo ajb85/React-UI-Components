@@ -22,7 +22,6 @@ class App extends Component {
     this.handleClear = this.handleClear.bind(this);
   }
   handleNumber(num) {
-    console.log("number");
     let { display, action } = this.state;
 
     if (!display || action) {
@@ -37,7 +36,6 @@ class App extends Component {
     });
   }
   handleClear() {
-    console.log("clear");
     this.setState({
       display: 0,
       total: 0,
@@ -50,7 +48,6 @@ class App extends Component {
     });
   }
   handleOperator(clicked) {
-    console.log("operator");
     let { display, total, operations, action } = this.state;
     let { divide, multiply, subtract, add } = this.state.operations;
 
