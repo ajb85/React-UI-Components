@@ -1,1 +1,40 @@
-/* All styles for your header Components live here */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.headerContainer .titleContainer {
+  width: 540px;
+}
+
+.titleContainer .headerTitle {
+  display: flex;
+  align-items: center;
+  width: 375px;
+  justify-content: space-between;
+}
+
+.headerTitle p {
+  color: grey;
+  font-size: 16px;
+  margin: 0;
+}
+.headerTitle h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.headerImage img {
+  -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
+  filter: brightness(0) invert(1);
+}
+
+div.headerImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #a0151c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

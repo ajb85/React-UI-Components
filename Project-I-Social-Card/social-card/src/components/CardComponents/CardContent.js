@@ -1,2 +1,21 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import "./Card.css";
+
+import Image from "../HeaderComponents/ImageThumbnail.js";
+import Banner from "./CardBanner.js";
+
+export default function() {
+  return (
+    <div className="contentContainer" onClick={handleClick}>
+      <Image
+        source="https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png"
+        style={{ width: 540 }}
+      />
+      <Banner />
+    </div>
+  );
+}
+
+function handleClick(e) {
+  window.location.href = "https://www.reactjs.org";
+}
